@@ -6,4 +6,8 @@ The rosbot_description contains a dedicated readme for its operation. Just place
 The stairs is a custom environment build for the functionality to add stairs in the environment hence, it should be added to .gazebo -> models folder and you can add it directly in gazebo empty world and use laser scan and pointcloud2 functionality.
 
 Use this to run the overall package with laserscan and PCL2 data
+```
 roslaunch rosbot_description rosbot_rviz_amcl.launch
+```
+
+![lidar simulation](https://user-images.githubusercontent.com/49041896/93393819-283efa00-f841-11ea-915b-15fd36fbd0ff.png)
