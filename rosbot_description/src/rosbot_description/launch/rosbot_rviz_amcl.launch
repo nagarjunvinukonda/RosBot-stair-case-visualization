@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find rosbot_description)/launch/rosbot_rviz.launch"></include>
+
+  <include file="$(find rosbot_navigation)/launch/amcl_demo.launch"></include>
+
+<node type="laser_scan_assembler" pkg="laser_assembler" name="my_assembler">
+<param name="max_scans" type="int" value="400" />
+<param name="fixed_frame" type="string" value="base_link" />
+</node>
+  <node type ="laser2pc.py" pkg="rosbot_description" name="laser2pc"/>
+
+</launch>
